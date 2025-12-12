@@ -1,0 +1,5 @@
+{
+  "name": "GenIO DataExchange",
+  "description": "Enterprise Master Data Management (MDM) platform dashboard for managing customer golden records, data quality, and identity resolution.",
+  "requestFramePermissions": []
+}
