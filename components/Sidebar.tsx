@@ -1,5 +1,5 @@
 import React from 'react';
-import { LayoutDashboard, Database, Users, GitMerge, ShieldCheck, Settings, Activity, Book } from 'lucide-react';
+import { LayoutDashboard, Database, Users, GitMerge, ShieldCheck, Settings, Activity, Book, Scale } from 'lucide-react';
 
 interface SidebarProps {
   currentPage: string;
@@ -14,6 +14,7 @@ const Sidebar: React.FC<SidebarProps> = ({ currentPage, onNavigate }) => {
     { id: 'ingestion', label: 'Ingestion & Sources', icon: Database },
     { id: 'data-catalog', label: 'Data Catalog', icon: Book },
     { id: 'governance', label: 'Governance & Lineage', icon: ShieldCheck },
+    { id: 'compliance', label: 'Compliance (UU PDP)', icon: Scale },
     { id: 'dq-rules', label: 'DQ Rules', icon: Activity },
     { id: 'settings', label: 'Settings', icon: Settings },
   ];

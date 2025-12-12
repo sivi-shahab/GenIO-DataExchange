@@ -8,9 +8,10 @@ import DQRules from './pages/DQRules';
 import Settings from './pages/Settings';
 import Ingestion from './pages/Ingestion';
 import DataCatalog from './pages/DataCatalog';
+import Compliance from './pages/Compliance';
 
 // Simple types for view management
-type View = 'dashboard' | 'golden-records' | 'stewardship' | 'ingestion' | 'governance' | 'settings' | 'dq-rules' | 'data-catalog';
+type View = 'dashboard' | 'golden-records' | 'stewardship' | 'ingestion' | 'governance' | 'settings' | 'dq-rules' | 'data-catalog' | 'compliance';
 
 const App: React.FC = () => {
   const [currentView, setCurrentView] = useState<View>('dashboard');
@@ -33,6 +34,8 @@ const App: React.FC = () => {
         return <Ingestion />;
       case 'data-catalog':
         return <DataCatalog />;
+      case 'compliance':
+        return <Compliance />;
       default:
         return (
           <div className="flex flex-col items-center justify-center h-96 text-slate-400">
